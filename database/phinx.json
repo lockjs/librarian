@@ -1,0 +1,15 @@
+{
+    "paths": {
+        "migrations": "%%PHINX_CONFIG_DIR%%/migrations",
+        "seeds": "%%PHINX_CONFIG_DIR%%/seeds"
+    },
+    "environments": {
+        "default_migration_table": "phinxlog",
+        "default_environment": "local",
+        "local": {
+            "adapter": "sqlite",
+            "name": "%%PHINX_CONFIG_DIR%%/librarian"
+        }
+    },
+    "version_order": "creation"
+}

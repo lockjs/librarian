@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Librarian | A new book every week</title>
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">-->
+    <link rel="stylesheet" href="styles/reset.css">
+<!--    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">-->
+    <style>
+        .grid-container {
+            height:1vh;
+            display: grid;
+            justify-content: start;
+            grid-template-columns: 0.6fr;
+        }
+
+        .grid-container {
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>Librarian</h1>
+            <p>A new book delivered to you inbox each week</p>
+        </header>
+        <main>
+            <div>
+                <p>Like reading but can't decide on your next book? Ask the Librarian!</p>
+                <p>Each week the Librarian will send you a new book, selected at random, for you to read.</p>
+                <form action="/register" method="post">
+                    <p>Send a new book to: </p>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" /><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.5",
+        "slim/slim": "^4.9",
+        "slim/psr7": "^1.5",
+        "php-di/php-di": "^6.3"
+    },
+    "require-dev": {
+        "fakerphp/faker": "*",
+        "robmorgan/phinx": "^0.12.9",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Librarian\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Librarian\\Test\\": "test/"
+        }
+    }
+}
